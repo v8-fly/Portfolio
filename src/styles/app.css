@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&family=Oxygen+Mono&display=swap');
+
+/* variables declared here - these are the colors for our pages, as well as the font stacks and sizes. */
+:root {
+    --black: #171321;
+    --dkblue: #0d314b;
+    --plum: #4b0d49;
+    --hotmag: #ff17e4;
+    --magenta: #e310cb;
+    --aqua: #86fbfb;
+    --white: #f7f8fa;
+    --font-size: 1.3rem;
+    --mono: "Oxygen mono", monospace;
+    --sans: Oxygen, sans-serif;
+}
+/* border box model: https://css-tricks.com/box-sizing/ */
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+/* generic styles for the page */
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: var(--sans);
+    background-color: var(--black);
+    color: var(--white);
+    font-size: var(--font-size);
+}
+h1 , h2 , h3 {
+    margin: 0;
+}
+a {
+    color: var(--magenta);
+}
+a:hover{
+    color: var(--hotmag);
+    text-decoration: none;
+}
+
+/* Intro styles */
+
+#intro{
+    padding-bottom: 10rem;
+}
+#intro p{
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+#intro .name{
+    font-family: var(--mono);
+}
+
+.name span {
+    font-family: var(--sans);
+    font-size: 4rem;
+    color: var(--aqua);
+    display: block;
+}
+
+#intro h2 {
+    font-size: 4rem;
+    font-weight: normal;
+}
+/* Contact Section */
+#contact {
+    background-color: var(--plum);
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 3em 0;
+    border-top: 2px solid var(--magenta);
+    border-bottom: 2px solid var(--magenta);
+}
+#contact p {
+    text-align: center;
+    width: 25rem;
+    margin: 2rem auto;
+    
+}
+#contact button {
+    background-color: var(--magenta);
+    border: none;
+    border-radius: 5px;
+    padding: 1rem;
+    color: var(--white);
+    font-family: var(--mono);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color : var(--hotmag);
+}
+
+/* Navbar */
+
+nav {
+    font-family: var(--mono);
+    font-size: 80%;
+    padding: 1rem;
+}
+
+nav h1 a {
+    font-family: var(--sans);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    display: block;
+}
+
+nav a:hover {
+    color: var(--magenta);
+}
+
+nav li:first-child{
+    flex-basis: 100%;
+    text-align: center;
+}
+
+nav [class*="fa-"]{
+    font-size: 150%;
+    color: var(--aqua);
+}
