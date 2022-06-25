@@ -32,7 +32,7 @@ body {
     color: var(--white);
     font-size: var(--font-size);
 }
-h1 , h2 , h3 {
+h1 , h2 , h3 ,h4 {
     margin: 0;
 }
 a {
@@ -46,7 +46,10 @@ a:hover{
 /* Intro styles */
 
 #intro{
-    padding-bottom: 10rem;
+    /* padding-bottom: 10rem; */
+    padding: 4rem  1rem 10rem 1rem  ;
+    max-width: 1200px;
+    margin: 0 auto; 
 }
 #intro p{
     font-size: 1rem;
@@ -140,4 +143,120 @@ nav li:first-child{
 nav [class*="fa-"]{
     font-size: 150%;
     color: var(--aqua);
+}
+
+nav h1 [class*="fa-"]{
+    font-size: 100%;
+}
+
+
+nav a:hover,
+nav [class*="fa-"]:hover {
+  color: var(--magenta);
+}
+
+.heading{
+    margin-left: 10px;
+}
+
+.button{
+    background-color: var(--magenta );
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.button:hover{
+    color: var(--white);
+    background-color: var(--hotmag);
+}
+
+@media (min-width : 850px ) {
+    nav {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    nav li:first-child {
+        flex-basis: auto;
+        text-align: left;
+        margin-right: auto;
+    }
+}
+
+footer{
+    text-align: center;
+    padding: 4rem 0;
+}
+
+
+footer  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+footer [class*="fa-"]{
+    padding: 1.5rem;
+    font-size: 250%;
+    color: var(--mag);
+}
+
+/* projects */
+#Projects{
+    border: 5px solid green;
+    padding: 4rem 1rem;
+    
+}
+
+#Projects h2{
+    font-size: 2.5rem;
+    margin-bottom: calc(2.5rem * 1.5);
+    
+}
+#Projects h3{
+    color: var(--aqua);
+}
+
+#Projects h4{
+    font-size: 1rem;
+    font-family: var(--mono);
+    
+}
+
+.section-blue{
+    background-color: var(--dkblue);
+}
+
+.blackbox{
+    background-color: var(--black);
+    padding: 1rem;
+    border-radius: 10px;
+    color: var(--white);
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+#Projects ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap ;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+    
+}
+
+#Projects img {
+    margin: 2rem 0 4rem 0;
+    border-left: 1px solid var(--aqua);
+    border-top: 1px solid var(--aqua);
+    border-radius: 25px;
+    padding: 1rem;
+    
 }

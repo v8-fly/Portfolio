@@ -9,7 +9,11 @@ function App() {
         <ul>
           <li>
             <h1>
-              <a href="index.html">Hardik Ganatra</a>
+              {/* //fa-solid fa-star */}
+              <a href="index.html">
+                <span className="fa-solid fa-guitar" aria-hidden="true"></span>
+                <span className="heading">Hardik Ganatra</span>
+              </a>
             </h1>
           </li>
           <li>
@@ -23,17 +27,22 @@ function App() {
           </li>
           <li>
             <a href="https://www.linkedin.com/in/hardik-ganatra-5503a7172/">
-              <span class="fa-brands fa-linkedin" aria-hidden="true"></span>
+              <span className="fa-brands fa-linkedin" aria-hidden="true"></span>
               <span className="sr-only">LinkedIn</span>
             </a>
           </li>
           <li>
-            <a href="https://github.com/v8-fly">Github</a>
+            <span
+              className="fa-brands fa-github-square"
+              aria-hidden="true"
+            ></span>
+            <span className="sr-only">Github</span>
           </li>
           <li>
             <a
               href="https://drive.google.com/file/d/1LCbNO_n6TKl1B5Io0lgP3cO5AnKU_i8u/view?usp=sharing"
               target="_blank"
+              className="button"
             >
               Resume
             </a>
@@ -53,6 +62,33 @@ function App() {
           </a>
         </p>
       </section>
+      <div className="section-blue">
+        <section id="Projects">
+          <h2>Projects I'm proud of</h2>
+          <article>
+            <h4>Latest Project</h4>
+            <h3>Wall of Wonder</h3>
+            <p className="blackbox">
+              Description of the project. This should be fairly concise while
+              also describing the key components that you developed or worked
+              on. It can be as long as you need it to be but should at least be
+              a few sentences long. Be sure to include specific links anywhere
+              in the description. A link looks like this, and multiple links
+              look like this and like this.
+            </p>
+            <h4>Technologies used include:</h4>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>SVG</li>
+            </ul>
+            <img
+              src="https://assets.codepen.io/296057/fem-gettingstartedcss-ch5-1.png"
+              alt="Screenshot of the Wall of Wonder."
+            />
+          </article>
+        </section>
+      </div>
       <section id="contact">
         <h2>Contact me</h2>
         <p>
@@ -62,6 +98,33 @@ function App() {
         </p>
         <button>Email me</button>
       </section>
+
+      <footer>
+        <h2>HARDIK GANATRA : DEVELOPER</h2>
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/hardik-ganatra-5503a7172/">
+              <span className="fa-brands fa-linkedin" aria-hidden="true"></span>
+              <span className="sr-only">LinkedIn</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/hardik-ganatra-5503a7172/">
+              <span className="fa-brands fa-linkedin" aria-hidden="true"></span>
+              <span className="sr-only">LinkedIn</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/hardik-ganatra-5503a7172/">
+              <span className="fa-brands fa-linkedin" aria-hidden="true"></span>
+              <span className="sr-only">LinkedIn</span>
+            </a>
+          </li>
+        </ul>
+        <p>
+          <small>2022 Hardik Ganatra. All rights reserved.</small>
+        </p>
+      </footer>
     </>
   )
 }
