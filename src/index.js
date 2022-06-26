@@ -65,23 +65,26 @@ function App() {
       <div className="section-blue">
         <section id="Projects">
           <h2>Projects I'm proud of</h2>
+          <div className="text"></div>
           <article>
-            <h4>Latest Project</h4>
-            <h3>Wall of Wonder</h3>
-            <p className="blackbox">
-              Description of the project. This should be fairly concise while
-              also describing the key components that you developed or worked
-              on. It can be as long as you need it to be but should at least be
-              a few sentences long. Be sure to include specific links anywhere
-              in the description. A link looks like this, and multiple links
-              look like this and like this.
-            </p>
-            <h4>Technologies used include:</h4>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>SVG</li>
-            </ul>
+            <div className="text">
+              <h4>Latest Project</h4>
+              <h3>Wall of Wonder</h3>
+              <p className="blackbox">
+                Description of the project. This should be fairly concise while
+                also describing the key components that you developed or worked
+                on. It can be as long as you need it to be but should at least
+                be a few sentences long. Be sure to include specific links
+                anywhere in the description. A link looks like this, and
+                multiple links look like this and like this.
+              </p>
+              <h4>Technologies used include:</h4>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>SVG</li>
+              </ul>
+            </div>
             <img
               src="https://assets.codepen.io/296057/fem-gettingstartedcss-ch5-1.png"
               alt="Screenshot of the Wall of Wonder."

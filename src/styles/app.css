@@ -43,6 +43,9 @@ a:hover{
     text-decoration: none;
 }
 
+img {
+    width: 100%;
+}
 /* Intro styles */
 
 #intro{
@@ -206,8 +209,9 @@ footer [class*="fa-"]{
 
 /* projects */
 #Projects{
-    border: 5px solid green;
     padding: 4rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
     
 }
 
@@ -258,5 +262,27 @@ footer [class*="fa-"]{
     border-top: 1px solid var(--aqua);
     border-radius: 25px;
     padding: 1rem;
-    
+}
+
+
+/* screen is 550 ps or wider */
+@media (min-width: 550px) {
+    article{
+        display: grid;
+        grid-template-columns: repeat(10 , 1fr);
+        gap: 1rem;
+    }
+    #Projects img {
+        grid-column: 1/6;
+        grid-row: 1/2;
+    }
+    .text{
+        grid-column: 5/11;
+        grid-row: 1/2;
+        order: 2;
+        text-align: right;
+    }
+    #Projects ul {
+        justify-content: flex-end;
+    }
 }
